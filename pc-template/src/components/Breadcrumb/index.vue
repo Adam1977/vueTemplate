@@ -54,10 +54,14 @@ export default {
     handleLink(item) {
       const { redirect, path } = item
       if (redirect) {
+        if (redirect === this.$route.path) {
+          return
+        }
         this.$router.push(redirect)
         return
       }
-      this.$router.push(this.pathCompile(path))
+      // this.$router.push(this.pathCompile(path))
+      this.$router.push(path)
     }
   }
 }
