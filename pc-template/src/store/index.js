@@ -1,30 +1,19 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-// 引入modules
-// import example from './modules/example'
-
+import getters from './getters'
+import app from './modules/app'
+import settings from './modules/settings'
+import user from './modules/user'
 
 Vue.use(Vuex)
 
-const store =  new Vuex.Store({
-  state: {
-    message: 'login.vue'
-  },
-  mutations: {
-    INDEX_SET(state, data){
-      state[data['target']] = data.data
-    }
-  },
-  actions: {
-    UPDATE_MESSAGE({commit}, params) {
-      commit('INDEX_SET', {
-        target: 'message',
-        data: params
-      })
-    }
-  },
+const store = new Vuex.Store({
   modules: {
-    // example
-  }
+    app,
+    settings,
+    user
+  },
+  getters
 })
+
 export default store

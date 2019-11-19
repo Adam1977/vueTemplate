@@ -8,6 +8,15 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import store from './store'
 import api from './api'
+
+import '@/icons' // icon
+import '@/permission' // permission control
+import '@/styles/index.scss' // global css
+import { mockXHR } from '../mock'
+mockXHR()
+
+
+
 Vue.prototype.$api = api
 
 Vue.use(ElementUI)
