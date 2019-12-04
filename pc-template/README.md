@@ -33,7 +33,7 @@ npm install axios --save
 ```
 // 参考utils eventBus.js
 ```
-5、sass
+6、sass
 ```
 npm install sass-loader@7.3.1 --save-dev // 高版本会报错
 npm install node-sass --save-dev //（@4.13.0）
