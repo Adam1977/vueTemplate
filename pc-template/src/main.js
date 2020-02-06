@@ -12,8 +12,8 @@ import api from './api'
 import '@/icons' // icon
 import '@/permission' // permission control
 import '@/styles/index.scss' // global css
-import { mockXHR } from '../mock'
-mockXHR()
+// import { mockXHR } from '../mock'
+// mockXHR()
 
 
 
